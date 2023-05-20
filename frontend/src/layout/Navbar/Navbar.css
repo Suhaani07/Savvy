@@ -1,0 +1,68 @@
+#navbar-custom
+{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+}
+#brand-text
+{  
+    font-family: 'Pacifico',cursive;
+    color:#f4f6f8;
+    font-size: 50px;
+}
+#slider{
+    background-color: #000000;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* .carousel-item{
+    height: 450px;
+  } */
+  .card {
+    width:25rem;
+    height: 2rem;
+    margin: 1.5rem;
+} 
+.nav-link
+{
+  color: #9ba1a5;
+  font-weight: 900;
+  
+}
+.nav-link:hover
+{
+  color: #3841aa;
+  border-width: 0 0 2px;
+    border-style: solid;
+  
+}
+#home
+{
+  color: #3841aa;
+}
+.form-control
+{
+  border-radius: 25px;
+  color: #000000;
+  border-color: inherit;
+
+}
+input[type="search"]{
+
+  background-image : linear-gradient(#1b237d,rgb(32, 15, 82));
+  
+}
+.btn-link
+{
+  margin-top: 0%;
+}
+  .card:hover{
+    cursor: pointer;
+  }
+  section{
+    background-color: #161718;
+  }
+  div{
+    margin-bottom: 1rem;
+  }

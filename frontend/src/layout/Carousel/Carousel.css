@@ -1,0 +1,18 @@
+.Testi
+{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    width: 100%;
+    height: 30rem;
+    background: rgb(4,3,22);
+background: linear-gradient(90deg, rgb(2, 1, 16) 0%, rgb(1, 1, 31) 30%, rgb(17, 1, 26) 100%);
+}
+
+#carouselExampleIndicators>.carousel-inner>.carousel-item
+{
+    margin-top: 5rem;
+}

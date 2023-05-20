@@ -1,0 +1,80 @@
+body {
+    background-color: #000000;
+  }
+  .product-img img{
+    float: left;
+    height: 30rem;
+    width: 18rem;
+    margin-left: 10rem;
+    margin-top: 4rem;
+    margin-bottom: 15rem;
+  }
+  
+ .pname
+ {
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 4rem;
+  margin-right: 1rem;
+  border-bottom: solid 0px;
+ }
+  .product-info{
+    display: inline-block;
+    margin: 3rem;
+    
+  margin-right: 1rem;
+    margin-left: 18rem;
+    
+  }
+  .pdes
+  {
+    color: rgb(168, 196, 222);
+  }
+  button{
+    margin: 0.3rem ;
+  }
+  
+  .product-price-btn {
+    height: 103px;
+    width: 327px;
+    margin-top: 17px;
+    position: relative;
+    
+  }
+
+  
+  .pspan {
+    display: inline-block;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+    margin-top: 4rem;
+    color: aliceblue;
+  }
+  .product-price-btn button:hover {
+
+    box-shadow: 0px 0px 10px #0b5c62;
+    transform: scale(1.1)
+  }
+  .product-price-btn button {
+    transition: all .4s ease-in-out;
+    display: inline-block;
+    height: 50px;
+    width: 176px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #180933;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  

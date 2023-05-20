@@ -1,0 +1,34 @@
+#logout {
+    color: #000000;
+    font-size: 16px;
+    padding: 12px 35px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    margin: 4rem;
+    box-shadow: 0px 4px 20px 0px #666f78a6;
+    background-image: linear-gradient(135deg, #24054c96 10%, #3528c6 100%);
+  }
+  .useremail
+  {
+        font-size: 2rem;
+        margin-left: 4rem;
+        color:rgb(255, 255, 255);
+        
+        font-family: 'Times New Roman', Times, serif;
+        
+  }
+  .userrole
+  {
+        font-size: 1.5rem;
+        margin-left: 4rem;
+        color:rgb(163, 157, 157);
+        font-family: 'Times New Roman', Times, serif;
+        
+  }
+
+  div>form
+  {
+      display: inline;
+  }
