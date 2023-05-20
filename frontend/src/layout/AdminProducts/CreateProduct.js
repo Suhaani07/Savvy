@@ -29,7 +29,7 @@ const CreateProduct = () => {
 	}
   };
   return (
-    <div>
+    <div id="admin">
       <div class="box-form">
 	<div class="left">
 		<div class="overlay">
