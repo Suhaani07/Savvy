@@ -10,8 +10,8 @@ router.route("/admin/products/new")
 .post(createProduct);
 
 router.route("/admin/products/:id")
-.put(isAuthenticatedUser,authorizeRoles("admin"),updateProduct)
-.delete(isAuthenticatedUser,authorizeRoles("admin"),deleteProduct);
+.put(updateProduct)
+.delete(deleteProduct);
 
 router.route("/review")
 .put(isAuthenticatedUser,productReview);

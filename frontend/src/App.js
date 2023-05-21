@@ -13,15 +13,15 @@ import TestCarousel from './layout/Carousel/TestCarousel';
 import UserProfile from './layout/UserProfile/UserProfile';
 import logout from './layout/logout';
 import Update from './layout/Update Profile/Update';
-
-
-
+import DeleteProduct from './layout/AdminProducts/DeleteProduct';
 
 function App() {
   const loggedin =window.localStorage.getItem("loggedin");
   const role =window.localStorage.getItem("status");
   return (
     <div >
+      <Navbar/>
+      if(role=="user")
       <Navbar/>
       <BrowserRouter>
       <Switch>
@@ -34,6 +34,7 @@ function App() {
                 <Route exact path="/logout" component={logout} />
                 <Route exact path="/register" component={Register} />
                 <Route exact path="/admin/create" component={role=="admin"?CreateProduct:Login} />
+                <Route exact path="/admin/delete" component={role=="admin"?DeleteProduct:Login} />
                 
             </Switch>
             </BrowserRouter>
