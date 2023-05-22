@@ -14,6 +14,7 @@ import UserProfile from './layout/UserProfile/UserProfile';
 import logout from './layout/logout';
 import Update from './layout/Update Profile/Update';
 import DeleteProduct from './layout/AdminProducts/DeleteProduct';
+import Panel from './layout/AdminProducts/Panel';
 
 function App() {
   const loggedin =window.localStorage.getItem("loggedin");
@@ -21,8 +22,7 @@ function App() {
   return (
     <div >
       <Navbar/>
-      if(role=="user")
-      <Navbar/>
+      {role==="admin"? <Panel/>:null}
       <BrowserRouter>
       <Switch>
                 <Route exact path="/" component={Home} />
