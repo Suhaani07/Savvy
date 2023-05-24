@@ -35,7 +35,7 @@ const Login = () => {
 		<div class="right">
 		<h5 class="login">Login</h5>
 		<p>Don't have an account? <a href="/register">Register</a> it takes less than a minute</p>
-		<form onSubmit={handleSubmit}>
+		<form>
 		<div class="inputs">
 			<input type="email" placeholder="user name" id="email" value={email}
             onChange={(e) => setEmail(e.target.value)}/>
@@ -46,7 +46,7 @@ const Login = () => {
 			
 		<div class="remember-me--forget-password">
 		</div>
-			<button type='submit'>Login</button>
+			<button type='submit' onClick={handleSubmit}>Login</button>
 			</form>
 	</div>
 </div>
