@@ -15,6 +15,7 @@ import logout from './layout/logout';
 import Update from './layout/Update Profile/Update';
 import DeleteProduct from './layout/AdminProducts/DeleteProduct';
 import Panel from './layout/AdminProducts/Panel';
+import Search from './layout/Search';
 
 function App() {
   const loggedin =window.localStorage.getItem("loggedin");
@@ -27,15 +28,15 @@ function App() {
       <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/category/:name" component={Category} />
+                <Route exact path="/search/:name" component={Search} />
                 <Route exact path="/products/:_id" component={ProductDetails} />
                 <Route exact path="/products" component={Products} />
                 <Route exact path="/login" component={loggedin?UserProfile:Login} />
                 <Route exact path="/login/update" component={loggedin?Update:Login} />
                 <Route exact path="/logout" component={logout} />
                 <Route exact path="/register" component={Register} />
-                <Route exact path="/admin/create" component={role=="admin"?CreateProduct:Login} />
-                <Route exact path="/admin/delete" component={role=="admin"?DeleteProduct:Login} />
-                
+                <Route exact path="/admin/create" component={role==="admin"?CreateProduct:Login} />
+                <Route exact path="/admin/delete" component={role==="admin"?DeleteProduct:Login} />
             </Switch>
             </BrowserRouter>
       <TestCarousel/>

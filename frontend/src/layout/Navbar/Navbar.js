@@ -1,7 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
 import "./Navbar.css"
+import React,{useEffect,useState} from 'react'
 const Navbar = () => {
+  const [search,setsearch]=useState([]);
+  
   return (
     <div>
       <section id="logo">
@@ -26,9 +28,9 @@ const Navbar = () => {
             </li>
           </ul>
           <span class="navbar-text">
-            <form class="d-flex" role="search" >
-              <input class="form-control" type="search" placeholder="Search here" aria-label="Search"/>
-              <button class=" btn btn-link" type="submit" ><img src="/images/search.png" alt="Search" width="15" height="15"/></button>
+            <form class="d-flex" action={"/search/"+search}>
+              <input class="form-control"  onChange={(e) => setsearch(e.target.value)} type="search" placeholder="Search here" aria-label="Search"/>
+              <button class=" btn btn-link" type="submit"><a href={'/search/'+search}><img src="/images/search.png" alt="Search" width="15" height="15"/></a></button>
             </form>
           </span>
         </div>

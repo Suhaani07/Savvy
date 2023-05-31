@@ -1,23 +1,20 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React,{useEffect,useState} from 'react'
-import "./Category.css"
+import "./Products/Products.css"
 import axios from 'axios'
 import { useParams } from 'react-router-dom';
 
-const Category = () => {
-
+const Search = () => {
   const [mydata,setmydata]=useState([]);
- 
   useEffect(() => {
     axios.get('http://localhost:4000/api/v1/products')
     .then((res)=>setmydata(res.data.products))
     .catch((error)=>{
       console.log(error);
     })
-    
   },[]);
-  const {name} = useParams()
+  const {name} = useParams();
     let s=name;
   return (
   <section>
@@ -25,8 +22,9 @@ const Category = () => {
 {
 mydata.map((post)=>{
 
-const {price,_id,images,name,NumofReview,category}=post;
-if(s===category.toLowerCase())
+const {price,_id,images,name,NumofReview,category,description}=post;
+s=s.toLowerCase();
+if(category.toLowerCase().includes(s)||name.toLowerCase().includes(s)||description.toLowerCase().includes(s))
 {
 return(
 <>
@@ -72,7 +70,4 @@ return(
   
 
   )}
-
-
-
-export default Category;
+export default Search;

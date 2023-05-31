@@ -15,12 +15,6 @@ const Panel = () => {
             <li class="nav-item">
               <a class="nav-link" href="/admin/delete">Delete Product</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/admin/update">Update Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">See Product IDs</a>
-            </li>
           </ul>
         </div>
       </div>
