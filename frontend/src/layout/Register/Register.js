@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import './Register.css'
 import axios from 'axios';
-const url = 'http://localhost:4000/api/v1/register';
+const url = '/api/v1/register';
 const Register = () => {
 
   const [password, setPassword] = useState('');
