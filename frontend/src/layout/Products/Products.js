@@ -10,7 +10,7 @@ const Products = () => {
   const p=2;
  
   useEffect(() => {
-    axios.get('http://localhost:4000/api/v1/products')
+    axios.get('mongodb+srv://Suhaani:Suhaani071003@savvy.fqyyfih.mongodb.net/Savvy?retryWrites=true&w=majority/products')
     .then((res)=>setmydata(res.data.products))
     .catch((error)=>{
       console.log(error);
