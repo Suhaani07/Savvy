@@ -10,7 +10,7 @@ const Products = () => {
   const p=2;
  
   useEffect(() => {
-    axios.get('http://localhost:1000/products')
+    axios.get('http://localhost:10000/products')
     .then((res)=>setmydata(res.data.products))
     .catch((error)=>{
       console.log(error);
