@@ -1,13 +1,18 @@
 # Savvy - README
 
-![Project Screenshots](/path/to/screenshots.png)
+![Project Screenshots]
 <img width="1068" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/cffce590-6a68-4d7d-bbeb-37ca46258164">
 <img width="1067" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/4daec0dc-36f2-4f64-92de-fba97c2ddc87">
 <img width="1066" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/c40c8e30-3e66-4423-94c4-a1c2fd0c56c5">
 <img width="1068" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/7aa1c114-4d16-4a36-87a5-29a6b4344406">
+<img width="1068" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/c4274ea6-2b6d-4270-9411-7842353aa0c1">
+<img width="1067" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/62934c06-7492-46f8-9abf-9663f88fa59c">
 <img width="1067" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/a0b5baae-52d5-4663-8a20-7f671ef8d80b">
 <img width="1068" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/84acaa7b-8327-4b99-9508-11b2cbff0658">
 <img width="1070" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/a02cb1be-71ac-4164-b371-22b785897c3e">
+<img width="1068" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/9bddc493-e261-492c-83fb-143125d72932">
+<img width="1066" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/6ace0b3b-22c5-4f66-bfcb-410dedcd31c8">
+<img width="1067" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/601ce369-d270-4567-b220-a08647c47d3f">
 
 [Watch Demo Video](https://www.example.com)
 
