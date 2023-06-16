@@ -10,7 +10,7 @@ const Products = () => {
   const p=2;
  
   useEffect(() => {
-    axios.get(`http://localhost:${process.env.PORT || 4000}/products`)
+    axios.get(`https://savvy-vaqt.onrender.com/products`)
     .then((res)=>setmydata(res.data.products))
     .catch((error)=>{
       console.log(error);
