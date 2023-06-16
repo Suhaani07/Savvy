@@ -14,8 +14,7 @@
 <img width="1066" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/6ace0b3b-22c5-4f66-bfcb-410dedcd31c8">
 <img width="1067" alt="image" src="https://github.com/Suhaani07/Savvy/assets/98284331/601ce369-d270-4567-b220-a08647c47d3f">
 
-[Watch Demo Video]
-(https://www.canva.com/design/DAFmA1PaDUs/GAvef2ick79EmwfICF6GgA/edit?utm_content=DAFmA1PaDUs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Watch Demo Video](https://drive.google.com/file/d/1uh2AM4qx4FPdxWxVdya0m0O6pn_aQTF0/view?usp=sharing)
 
 Welcome to the README file of the Ecommerce Website project! 
 This project is built using the MERN (MongoDB, Express.js, React.js, Node.js) stack and aims to create a fully functional ecommerce website with various features such as user registration, authentication, product management, and user profile management. Below you will find an overview of the project and important details about its functionality.
