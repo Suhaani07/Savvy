@@ -3,14 +3,14 @@
 import React,{useEffect,useState} from 'react'
 import "./Products.css"
 import axios from 'axios'
-const BASEURL=process.env.BASEURL;
+
 const Products = () => {
 
   const [mydata,setmydata]=useState([]);
   const p=2;
  
   useEffect(() => {
-    axios.get(`${BASEURL}/products`)
+    axios.get('http://localhost:4000/api/v1/products')
     .then((res)=>setmydata(res.data.products))
     .catch((error)=>{
       console.log(error);
