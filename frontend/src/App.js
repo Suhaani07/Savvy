@@ -16,6 +16,7 @@ import Update from './layout/Update Profile/Update';
 import DeleteProduct from './layout/AdminProducts/DeleteProduct';
 import Panel from './layout/AdminProducts/Panel';
 import Search from './layout/Search';
+import Cart from './layout/Cart/Cart';
 
 function App() {
   const loggedin =window.localStorage.getItem("loggedin");
@@ -27,6 +28,7 @@ function App() {
       <BrowserRouter>
       <Switch>
                 <Route exact path="/" component={Home} />
+                <Route exact path="/cart" component={Cart} />
                 <Route exact path="/category/:name" component={Category} />
                 <Route exact path="/search/:name" component={Search} />
                 <Route exact path="/products/:_id" component={ProductDetails} />

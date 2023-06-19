@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav class="navbar navbar-expand-lg " id="navbar-custom">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="/images/logo.png" alt="Logo" width="100" height="70" class="d-inline-block align-text-top"/></a>
+        <img src="/images/logo.png" alt="Logo" width="100" height="70" class="d-inline-block align-text-top"/></a>
         <a class="navbar-brand " id="brand-text" href="/">Savvy</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,9 @@ const Navbar = () => {
             <form class="d-flex" action={"/search/"+search}>
               <input class="form-control"  onChange={(e) => setsearch(e.target.value)} type="search" placeholder="Search here" aria-label="Search"/>
               <button class=" btn btn-link" type="submit"><a href={'/search/'+search}><img src="/images/search.png" alt="Search" width="15" height="15"/></a></button>
+              <a  href="/cart"><img src="/images/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"/></a>
             </form>
+            
           </span>
         </div>
       </div>

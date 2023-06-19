@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./ProductDetails.css"
 import axios from "axios"
 import { useParams } from 'react-router-dom';
+import { Alert } from 'bootstrap';
 function ProductDetails() {
   const [mydata,setmydata]=useState([]);
  
@@ -14,6 +15,18 @@ function ProductDetails() {
   },[]);
     const {_id} = useParams()
     let s=_id
+    const Add = async (e) => {
+  
+    try{
+      localStorage.setItem(document.getElementsByClassName("pname")[0].innerHTML,`${_id}` );
+        alert("Added to Cart");
+      
+    }
+    catch(error){
+      console.log(error)
+      
+    }
+    };
     return (
  <div>
       {
@@ -37,7 +50,10 @@ function ProductDetails() {
 <br></br>
 <span class="pspan">{`₹${price}`}</span>
 <br/>
+<span>
 <button type="button" id="buy" >Buy now</button>
+<button type="button" id="buy" onClick={Add}>Add to Cart</button>
+</span>
 <br></br>
 <span class="pdes">{description}</span>
         
