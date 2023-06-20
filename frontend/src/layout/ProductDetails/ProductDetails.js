@@ -18,8 +18,8 @@ function ProductDetails() {
     const Add = async (e) => {
   
     try{
-      localStorage.setItem(document.getElementsByClassName("pname")[0].innerHTML,`${_id}` );
-        alert("Added to Cart");
+      localStorage.setItem(`${_id}`,Number(localStorage.getItem(localStorage.key(_id))==''?1:localStorage.getItem(localStorage.key(_id)))+1 );
+      alert("Added to Cart");
       
     }
     catch(error){

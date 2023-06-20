@@ -41,11 +41,12 @@ const Home = () => {
   <div class="p"></div>
 </div>
 
-<div class="grid">
+<div class="container">
+  <div class="row">
   <a href='/category/watch'>
 <div class="card card1 card-image">
      
-    <div>
+    <div class="col">
       <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Watches</h5>
   </div>
   
@@ -54,7 +55,7 @@ const Home = () => {
 <a href='/category/perfume'>
 <div class="card card2 card-image">
      
-    <div>
+    <div class="col">
       <h5 class="pink-text">Perfumes</h5>
   </div>
  
@@ -62,18 +63,19 @@ const Home = () => {
 </a>
 <div class="q"></div>
 </div>
+</div>
 <center><h1>&nbsp;&nbsp;Popular In Store&nbsp; &nbsp;</h1></center>
-<div className='grid'>
+
+<div >
+<div id='productcard'class="container" >
+  
+  <div class="gallery row">
 {mydata.slice(0,2).map((post)=>{
 
 const {price,_id,images,name,category}=post;
 return(
 <>
-
-  <div id='productcard' key={_id}>
-  
-    <div class="gallery ">
-      <div class="content">
+      <div class="content col">
 <a className='productCard' href={`/products/${_id}`}>
   <img src={images[0].url} alt={name} width="100px" height="100px"/></a>
         
@@ -82,10 +84,10 @@ return(
       <br></br>
         <div>{category}</div>
       </div>
-    </div>
-</div>
+    
   </>
 )
+
 
 
 
@@ -93,6 +95,8 @@ return(
 
 
 }
+</div>
+</div>
 </div>
 
 </section>
